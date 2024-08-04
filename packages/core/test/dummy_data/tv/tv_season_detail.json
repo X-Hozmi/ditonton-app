@@ -1,0 +1,23 @@
+{
+    "id": 1,
+    "air_date": "2024-07-01",
+    "episodes": [
+      {
+        "air_date": "2024-07-01",
+        "episode_number": 1,
+        "id": 101,
+        "name": "Episode 1",
+        "overview": "This is the overview for Episode 1.",
+        "production_code": "P001",
+        "season_number": 1,
+        "still_path": "/path/to/still_image_1.jpg",
+        "vote_average": 8.5,
+        "vote_count": 120
+      }
+    ],
+    "name": "Season 1",
+    "overview": "This is the overview for Season 1.",
+    "poster_path": "/path/to/season_poster.jpg",
+    "season_number": 1
+  }
+  
