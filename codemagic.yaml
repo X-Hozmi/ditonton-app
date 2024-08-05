@@ -1,19 +1,30 @@
 workflows:
   android-workflow:
     name: Android Workflow
+    instance_type: mac_mini_m1
+    max_build_duration: 120
     environment:
       flutter: stable
+      xcode: latest
+    cache:
+      cache_paths:
+        - ~/.pub-cache
+    triggering:
+      events:
+        - push
+      branch_patterns:
+        - pattern: '*'
+          include: true
+          source: true
+      cancel_previous_builds: false
     scripts:
-      - name: Install dependencies
-        script: |
-          flutter pub get
-      - name: Run tests
-        script: |
-          flutter test integration_test/app_test.dart
-    publishing:
-      scripts:
-        - name: Build APK
-          script: |
-            flutter build apk --release
+      - flutter pub get
+      - flutter test integration_test/app_test.dart
     artifacts:
       - build/app/outputs/flutter-apk/app-release.apk
+    publishing:
+      email:
+        recipients:
+          - haidar17042001@gmail.com
+      scripts:
+        - flutter build apk --release
