@@ -141,6 +141,7 @@ class DetailContent extends StatelessWidget {
                               style: kHeading5,
                             ),
                             ElevatedButton(
+                              key: const Key('watchlistButton'),
                               onPressed: () async {
                                 if (!isAddedWatchlist) {
                                   context

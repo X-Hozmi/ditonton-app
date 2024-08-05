@@ -185,6 +185,7 @@ class TVList extends StatelessWidget {
           return Container(
             padding: const EdgeInsets.all(8),
             child: InkWell(
+              key: const Key('itemTV'),
               onTap: () {
                 Navigator.pushNamed(
                   context,

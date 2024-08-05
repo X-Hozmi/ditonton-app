@@ -28,7 +28,7 @@ class _WatchlistPageState extends State<WatchlistPage>
     const Text('Film'),
     const Text(
       'Serial TV',
-      key: Key('tabTvDaftarTonton'),
+      key: Key('tabDaftarTonton'),
     ),
   ];
 
