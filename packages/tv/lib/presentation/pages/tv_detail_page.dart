@@ -4,7 +4,6 @@ import 'package:core/data/models/genre_model.dart';
 import 'package:core/data/models/tv/tv_season_model.dart';
 import 'package:core/domain/entities/tv/tv.dart';
 import 'package:core/domain/entities/tv/tv_detail.dart';
-import 'package:core/utils/routes.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:tv/presentation/bloc/detail/detail_bloc.dart';
 import 'package:flutter/material.dart';

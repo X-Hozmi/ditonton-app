@@ -11,16 +11,16 @@ void main() {
   group('Testing App', () {
     IntegrationTestWidgetsFlutterBinding.ensureInitialized();
 
-    final watchlistButton = find.byKey(Key('watchlistButton'));
+    final watchlistButton = find.byKey(const Key('watchlistButton'));
     final iconCheck = find.byIcon(Icons.check);
-    final iconBack = find.byKey(Key('iconBack'));
+    final iconBack = find.byKey(const Key('iconBack'));
     final iconMenuWatchlist = find.byIcon(Icons.remove_red_eye);
 
     testWidgets('Verify watchlist', (WidgetTester tester) async {
       app.main();
       await tester.pumpAndSettle();
 
-      final movieItem = find.byKey(Key('itemFilm')).first;
+      final movieItem = find.byKey(const Key('itemFilm')).first;
       await tester.tap(movieItem);
       await tester.pumpAndSettle();
 
@@ -40,7 +40,7 @@ void main() {
       await tester.tap(iconMenuTvSeries);
       await tester.pumpAndSettle();
 
-      final tvSeriesItem = find.byKey(Key('itemTV')).first;
+      final tvSeriesItem = find.byKey(const Key('itemTV')).first;
       await tester.tap(tvSeriesItem);
       await tester.pumpAndSettle();
 
@@ -54,7 +54,7 @@ void main() {
       await tester.tap(iconMenuWatchlist);
       await tester.pumpAndSettle();
 
-      await tester.tap(find.byKey(Key('tabDaftarTonton')));
+      await tester.tap(find.byKey(const Key('tabDaftarTonton')));
       await tester.pumpAndSettle();
       expect(find.byType(TVCard), findsOneWidget);
     });

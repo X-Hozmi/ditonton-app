@@ -1,7 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:core/core.dart';
 import 'package:core/domain/entities/movie/movie.dart';
-import 'package:core/utils/routes.dart';
 import 'package:movie/presentation/bloc/popular/popular_bloc.dart';
 import 'package:movie/presentation/bloc/top_rated/top_rated_bloc.dart';
 import 'package:movie/presentation/bloc/nowplaying/nowplaying_bloc.dart';

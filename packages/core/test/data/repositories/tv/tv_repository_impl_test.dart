@@ -13,7 +13,7 @@ import 'package:core/domain/entities/tv/tv.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 
-import '../../../dummy_data/tv/dummy_objects_tv.dart';
+import '../../../../../../test/dummy_data/tv/dummy_objects_tv.dart';
 import '../../../helpers/tv/test_helper_tv.mocks.dart';
 
 void main() {
